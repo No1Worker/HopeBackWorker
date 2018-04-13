@@ -2,6 +2,11 @@ package com.no1woker.util;
 
 import java.security.MessageDigest;
 
+/**
+ * User: JavaE
+ * Date: 2018/3/22
+ * Time: 16:01
+ */
 public class MD5Util {
 
     private static String byteArrayToHexString(byte b[]) {

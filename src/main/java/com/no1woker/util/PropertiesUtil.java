@@ -7,6 +7,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Properties;
 
+/**
+ * User: JavaE
+ * Date: 2018/3/22
+ * Time: 16:01
+ */
 @Slf4j
 public class PropertiesUtil {
 
