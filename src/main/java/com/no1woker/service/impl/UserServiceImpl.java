@@ -104,7 +104,11 @@ public class UserServiceImpl implements IUserService {
      * @return
      */
     public ServerResponse<User> updateInformation(User user) {
-        return null;
+        int resuleCount = userMapper.updateByPrimaryKeySelective(user);
+        if (resuleCount > 0) {
+            return ServerResponse.createBySuccess("修改成功",user);
+        }
+        return ServerResponse.createBySuccessMessage("修改失败");
     }
 
 
